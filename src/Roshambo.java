@@ -7,11 +7,13 @@ public class Roshambo {
         String player1Choice;
         String player2Choice;
         String playAgain;
-        boolean choice1Good = false;
-        boolean choice2Good = false;
+        boolean choice1Good;
+        boolean choice2Good;
 
         //loop to keep the game going if the user chooses to play again
         do {
+            choice1Good = false;
+            choice2Good = false;
             //collect player 1 choice
             do {
                 System.out.println("Player 1, pick your choice! R, P, or S.");
